@@ -30,20 +30,33 @@ println "default_config = ${default_config}"
 /******************************************************************************\
  *  SKINNING
 \******************************************************************************/
-skin.layout = 'generic'
-skin.orgNameLong = "Generic Data Portal"
+skin.layout = 'ozcam'
+skin.orgNameLong = "Ozcam"
 skin.orgNameShort = "Occurrences"
 // whether crumb trail should include a home link that is external to this webabpp - ala.baseUrl is used if true
 skin.includeBaseUrl = true
-skin.headerUrl = "classpath:resources/generic-header.jsp" // can be external URL
-skin.footerUrl = "classpath:resources/generic-footer.jsp" // can be external URL
+//skin.headerUrl = "classpath:resources/generic-header.jsp" // can be external URL
+//skin.footerUrl = "classpath:resources/generic-footer.jsp" // can be external URL
 skin.fluidLayout = true // true or false
+
+defaultListView = '' // 'mapView' or 'listView'
 chartsBgColour = "#FFFFFF"
 
-/******************************************************************************\
- *  MISC
-\******************************************************************************/
+// Data hub UID needed for ozcam records
+biocache.queryContext = "data_hub_uid:dh1"
 
+security.cas.appServerName = "http://dev.ala.org.au:8080"
+security.cas.casServerName = 'https://auth.ala.org.au'
+security.cas.uriFilterPattern = '/admin, /admin/.*'
+security.cas.authenticateOnlyIfLoggedInPattern = "/occurrences/(?!.+userAssertions|facet.+).+,/explore/your-area"
+ssecurity.cas.uriExclusionFilterPattern = '/images.*,/css.*,/js.*'
+security.cas.loginUrl = 'https://auth.ala.org.au/cas/login'
+security.cas.logoutUrl = 'https://auth.ala.org.au/cas/logout'
+security.cas.casServerUrlPrefix = 'https://auth.ala.org.au/cas'
+security.cas.bypass = false // set to true for non-ALA deployment
+security.cas.contextPath = "/generic-biocache-hub" //"/${appName}"
+security.cas.debugWebXml = true
+auth.admin_role = "ROLE_ADMIN"
 
 // The ACCEPT header will not be used for content negotiation for user agents containing the following strings (defaults to the 4 major rendering engines)
 grails.mime.disable.accept.header.userAgents = ['Gecko', 'WebKit', 'Presto', 'Trident']
@@ -124,14 +137,14 @@ environments {
         //grails.resources.debug = true // cache & resources plugins
     }
     test {
-        grails.serverURL = 'http://biocache-test.ala.org.au'
-        serverName='http://biocache-test.ala.org.au'
+        grails.serverURL = 'http://ozcam-test.ala.org.au'
+        serverName='http://ozcam-test.ala.org.au'
         security.cas.appServerName = serverName
         //security.cas.contextPath = "/${appName}"
     }
     production {
-        grails.serverURL = 'http://biocache.ala.org.au'
-        serverName='http://biocache.ala.org.au'
+        grails.serverURL = 'http://ozcam.ala.org.au'
+        serverName='http://ozcam.ala.org.au'
         security.cas.appServerName = serverName
     }
 }
