@@ -38,6 +38,7 @@ skin.includeBaseUrl = true
 //skin.headerUrl = "classpath:resources/generic-header.jsp" // can be external URL
 //skin.footerUrl = "classpath:resources/generic-footer.jsp" // can be external URL
 skin.fluidLayout = true // true or false
+map.zoomOutsideScopedRegion = false
 
 defaultListView = '' // 'mapView' or 'listView'
 chartsBgColour = "#FFFFFF"
@@ -49,7 +50,7 @@ security.cas.appServerName = "http://dev.ala.org.au:8080"
 security.cas.casServerName = 'https://auth.ala.org.au'
 security.cas.uriFilterPattern = '/admin, /admin/.*'
 security.cas.authenticateOnlyIfLoggedInPattern = "/occurrences/(?!.+userAssertions|facet.+).+,/explore/your-area"
-ssecurity.cas.uriExclusionFilterPattern = '/images.*,/css.*,/js.*'
+security.cas.uriExclusionFilterPattern = '/images.*,/css.*,/js.*'
 security.cas.loginUrl = 'https://auth.ala.org.au/cas/login'
 security.cas.logoutUrl = 'https://auth.ala.org.au/cas/logout'
 security.cas.casServerUrlPrefix = 'https://auth.ala.org.au/cas'
@@ -134,7 +135,7 @@ environments {
         serverName='http://dev.ala.org.au:8080'
         security.cas.appServerName = serverName
         security.cas.contextPath = "/${appName}"
-        //grails.resources.debug = true // cache & resources plugins
+        grails.resources.debug = true // cache & resources plugins
     }
     test {
         grails.serverURL = 'http://ozcam-test.ala.org.au'

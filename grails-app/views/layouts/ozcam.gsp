@@ -104,23 +104,32 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="brand" href="http://ozcam.org.au/" title="OZCAM" rel="home">OZCAM</a>
-            <div class="nav-collapse wam-right"><ul id="main-menu" class="nav"><li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://ozcam.org.au/about/">About</a></li>
-                <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-46"><a href="http://ozcam.org.au/contributors/">Contributors</a>
-                    <ul class="dropdown-menu pull-right">
-                        <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="/contributors#ala">Atlas of Living Australia</a></li>
-                        <li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-50"><a href="/contributors#australian-museum">Australian Museum</a></li>
-                        <li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-51"><a href="/contributors#anbc">Australian National Biological Collections</a></li>
-                        <li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-67"><a href="/contributors#mv">Museum Vic-to-ria</a></li>
-                        <li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-68"><a href="/contributors#ntmag">North-ern Ter-ri-tory Museum and Art Gallery</a></li>
-                        <li id="menu-item-69" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-69"><a href="/contributors#qvmag">Queen Vic-to-ria Museum Art Gallery</a></li>
-                        <li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-70"><a href="/contributors#qm">Queens-land Museum</a></li>
-                        <li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-71"><a href="/contributors#sam">South Aus-tralian Museum</a></li>
-                        <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-72"><a href="/contributors#tmag">Tas-man-ian Museum and Art Gallery</a></li>
-                        <li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-73"><a href="/contributors#wam">West-ern Aus-tralia Museum</a></li>
-                    </ul>
-                </li>
-                <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="http://ozcam.org.au/news/">News</a></li>
-            </ul></div>
+            <div class="nav-collapse wam-right">
+                <ul id="main-menu" class="nav">
+                    <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
+                        <a href="http://ozcam.org.au/about/">About</a>
+                    </li>
+                    <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-46">
+                        <a href="http://ozcam.org.au/contributors/">Contributors</span></a>
+                        %{--<a href="http://ozcam.org.au/contributors/" class="dropdown-toggle" data-toggle="dropdown">Contributors <span class="caret"></span></a>--}%
+                        %{--<ul class="dropdown-menu pull-right">--}%
+                            %{--<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="/contributors#ala">Atlas of Living Australia</a></li>--}%
+                            %{--<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-50"><a href="/contributors#australian-museum">Australian Museum</a></li>--}%
+                            %{--<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-51"><a href="/contributors#anbc">Australian National Biological Collections</a></li>--}%
+                            %{--<li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-67"><a href="/contributors#mv">Museum Vic-to-ria</a></li>--}%
+                            %{--<li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-68"><a href="/contributors#ntmag">North-ern Ter-ri-tory Museum and Art Gallery</a></li>--}%
+                            %{--<li id="menu-item-69" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-69"><a href="/contributors#qvmag">Queen Vic-to-ria Museum Art Gallery</a></li>--}%
+                            %{--<li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-70"><a href="/contributors#qm">Queens-land Museum</a></li>--}%
+                            %{--<li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-71"><a href="/contributors#sam">South Aus-tralian Museum</a></li>--}%
+                            %{--<li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-72"><a href="/contributors#tmag">Tas-man-ian Museum and Art Gallery</a></li>--}%
+                            %{--<li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-73"><a href="/contributors#wam">West-ern Aus-tralia Museum</a></li>--}%
+                        %{--</ul>--}%
+                    </li>
+                    <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45">
+                        <a href="http://ozcam.org.au/news/">News</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

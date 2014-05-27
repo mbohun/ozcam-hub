@@ -1,0 +1,195 @@
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/G2uphNnNqGFMHLRsO_72ngLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+/* OZCAM bootstrap overrides */
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #ffffff;
+}
+a {
+    color: #0088cc;
+    text-decoration: none;
+}
+a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+.img-rounded {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.navbar-relative-top .navbar-inner {
+    min-height: 50px;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.navbar-relative-top .container {
+    max-width: 1170px;
+}
+.navbar .nav > li > a {
+    float: none;
+    padding: 14px 15px 11px;
+    color: #777777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+    font-size: 18px;
+}
+.navbar .nav .dropdown-toggle .caret {
+    margin-top: 8px;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+    background-color: transparent;
+    /*color: #333333;*/
+    text-decoration: none;
+}
+.navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px;
+}
+.navbar-inverse .navbar-inner {
+    background: #34495e;
+    border-color: #34495e;
+}
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-relative-top {
+    margin-bottom: 0;
+    position: relative;
+}
+/* Jumbotrons
+-------------------------------------------------- */
+/* Base class
+------------------------- */
+.hero-bg {
+    background: #3498db url(images/jumbo-background.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.main {
+    background: white;
+    padding-top: 5px;
+}
+.jumbotron {
+    position: relative;
+    padding: 14px 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 30px rgba(0, 0, 0, 0.075);
+    /*margin-bottom: 1em;*/
+}
+.jumbotron h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+.jumbotron p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+/* Link styles (used on .masthead-links as well) */
+.jumbotron a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.jumbotron a:hover {
+    color: #fff;
+}
+
+.brand {
+    padding-left: 10px;
+    background: url(../css/images/OzFinal.png) 0 50% no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    display: block;
+    width: 140px;
+    height: 28px;
+}
+
+.wam-right {
+    float: right;
+}
+.wamfooter {
+    background-color: #eceff1;
+    color: #5a5a5a;
+    font-size: 15px;
+    padding: 4em 0;
+    margin-top: 3em;
+    text-align: center;
+}
+
+/* Subhead (other pages)
+------------------------- */
+.subhead {
+    text-align: left;
+    /*margin-bottom: 1em;*/
+}
+.subhead h1 {
+    font-size: 32px;
+}
+.subhead p {
+    margin-bottom: 20px;
+}
+.subhead .navbar {
+    display: none;
+}
+
+
+/* ALA additions */
+
+.container #resultsReturned .dropdown-menu, .container #customiseFacetsButton .dropdown-menu {
+    background-color: #FEFEFE;
+}
